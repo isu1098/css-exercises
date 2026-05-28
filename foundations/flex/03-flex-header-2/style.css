@@ -8,10 +8,26 @@ body {
   font-family: Besley, serif;
 }
 
-.header {
+.header  {
+  display: flex;
+  justify-content: space-between;
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+}
+
+.right-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+  padding: 8px;
+
+}
+
+.left-header  {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .profile-image {
@@ -23,18 +39,24 @@ body {
 }
 
 .logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   color: rebeccapurple;
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  padding: 8px;
 }
 
 button {
+  display: flex;
   border: none;
   border-radius: 8px;
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+  flex-shrink: 1;
 }
 
 a {
@@ -44,5 +66,20 @@ a {
 }
 
 ul {
+  display: flex;
+  justify-content: flex-start;
   list-style-type: none;
+  padding: 0;
 }
+
+li  {
+  display: flex;
+  justify-content: flex-start;
+  padding: 8px;
+}
+
+.profile-image  {
+  display: flex;
+  flex-shrink: 0;
+}
+
