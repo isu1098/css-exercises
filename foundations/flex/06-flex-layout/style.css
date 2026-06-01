@@ -2,6 +2,7 @@
 
 a{
   text-decoration: none;
+  color: #666;
 }
 body {
   height: 100vh;
@@ -29,7 +30,6 @@ ul {
   gap: 10px;
   list-style: none;
   padding-right: 40px;
-  color: gray;
 }
 
 .content {
